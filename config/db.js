@@ -3,11 +3,11 @@ const mysql2 = require("mysql2/promise");
 require("dotenv").config();
 
 const connection = mysql2.createPool({
-  host: process.env.MYSQLHOST,
-  user: process.env.MYSQLUSER,
-  port: process.env.MYSQLPORT,
-  password: process.env.MYSQLPASSWORD,
-  database: process.env.MYSQLDATABASE,
+  host: 'roundhouse.proxy.rlwy.net',
+  user: 'root',
+  port: '46785',
+  password: 'dPLNXWMXwxFnffTPjiFNjjOVNgZbLQor',
+  database: 'railway',
 });
 
 module.exports = connection;
